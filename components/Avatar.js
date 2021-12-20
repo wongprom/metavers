@@ -8,9 +8,10 @@ const Avatar = ({ username, logoutOnPress }) => {
       className="bg-black rounded-full cursor-pointer hover:opacity-75"
       src={`https://avatars.dicebear.com/api/pixel-art/${
         username || user.get('username')
-      }.svg?mood[]=happy`}
+      }.svg`}
       layout="fill"
       onClick={() => logoutOnPress && logout()}
+      alt=""
     />
   );
 };
